@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    background: rgba(94, 94, 94, 1);
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-right: 45px;
+}
+
+.slides-one, .slides-two, .slides-three {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    margin-top: -2px;
+}
+
+.container {
+    font-size: 0;
+}
+
+.fundo {
+    width: 100%;
+    display: block;
+    margin: -1px 0 0 0; 
+}
+
+.title1, .title2, .title3 {
+    position: absolute;   
+    top: 15%;                       
+    color: white;
+    font-family: "Sofia Sans Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    max-width: 47%;    
+    line-height: 1.2;                   
+}
+
+.slides-one {
+  background: url("../img/FundoRoxo.svg") no-repeat center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.slides-two {
+  background: url("../img/FundoAmarelo.svg") no-repeat center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.slides-three {
+  background: url("../img/FundoAzul.svg") no-repeat center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.content-slide1 {
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    max-width: 35%;
+    text-align: right;
+}
+
+.img-slide1 {
+    position: absolute;
+    top: 8%;
+    left: 7%;
+    width: 420px;
+    height: auto;
+    transform: rotate(5deg);
+}
+
+.img-slide1:hover, .img-slide1:active {
+    transform: rotate(5deg);
+}
+
+.title1 {
+    right: 0;          
+    text-align: right;   
+    margin-right: 9%;  
+}
+
+.title2 {
+    left: 0;
+    text-align: left;   
+    margin-left: 9%;
+}
+
+.title3 {
+    right: 0;
+    text-align: right;    
+    margin-right: 9%;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-family: "Sofia Sans Condensed", sans-serif;
+    font-weight: 410;
+    font-size: 1.57rem;
+    line-height: 1.4;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.legenda1 {
+    max-width: 42%;
+}
+
+.legenda2 {
+    max-width: 46%;
+}
+
+.legenda3 {
+    max-width: 40%;
+}
+
+.slides-one p {
+    right: 0;
+    margin-right: 9%;
+}
+
+.slides-two p {
+    left: 0;
+    margin-left: 9%;
+}
+
+.slides-three p {
+    right: 0;
+    margin-right: 9%;
+}
+
+.btn-legenda {
+    position: absolute;
+    top: 75%;
+    background: white;
+    font-family: "Sofia Sans Condensed", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 25px 70px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#btn1 {
+    color: rgba(105, 50, 152, 1)
+}
+
+#btn2 {
+    color: rgba(249, 179, 47, 1);
+}
+
+#btn3{
+    color: rgba(52, 152, 219, 1);
+}
+
+.btn-legenda:hover {
+    background: rgba(255, 255, 255, 0.85);
+    transform: scale(1.05);
+}
+
+.slides-one .btn-legenda {
+    right: 0;
+    margin-right: 9%;
+}
+
+.slides-two .btn-legenda {
+    left: 0;
+    margin-left: 9%;
+}
+
+.slides-three .btn-legenda {
+    right: 0;
+    margin-right: 9%;
+}
+
+footer {
+    background: rgba(94, 94, 94, 1);
+    padding: 20px 40px;
+    color: white;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    margin-top: -4px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 15px;
+    background-image: url("../img/mariana\ sem\ fundo\ -\ Copia.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-name {
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links li a {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links li a:hover {
+    opacity: 0.7;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.social.github i {
+  color: #333; 
+}
+
+.social.instagram i {
+  color: #E1306C; 
+}
+
+.social.linkedin i {
+  color: #0077b5; 
+}
+
+.social.email i {
+  color: #fbbc05; 
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: white;
+    font-size: 18px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social:hover {
+    transform: scale(1.15);
+    background: #d6d6d6;
+}
