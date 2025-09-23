@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubra seu Animal Interior</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  </head>
+    <body>
+    <div id="start-menu" class="start-menu">
+      <h1 class="start-title">Descubra Seu Animal Interior</h1>
+      <img src="./img/home.jpg" alt="Animais espirituais" class="start-image">
+      <p class="start-text">Responda 12 perguntas para descobrir qual animal mais combina com sua personalidade!</p>
+      <button class="start-button" onclick="startQuiz()">Começar Quiz</button>
+    </div>
+    
+    <div class="quiz-container" style="display: none;">
+      <div class="progress-bar">
+        <div class="progress" style="width: 0%"></div>
+      </div>
+      <div class="question-counter">Questão <span id="current-number">1</span> de <span id="total-questions">10</span></div>
+      
+      <div id="quiz">
+        <div class="question-container">
+          <div class="question-image"></div>
+          <h2 id="question"></h2>
+        </div>
+        <div class="options-grid" id="options">
+        </div>
+      </div>
+    
+      <div id="result" class="result-container">
+        <h2>Seu Animal Interior é:</h2>
+        <h1 id="animal-name"></h1>
+        <div class="result-image">
+          <span id="animal-emoji"></span>
+        </div>
+        <p id="description"></p>
+        <div class="button-container">
+          <button class="return-home-button" onclick="returnToHome()">Refazer Quiz</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./java/script.js"></script>
+    </body></html>

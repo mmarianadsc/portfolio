@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo do Pudim</title>
+    <link rel="stylesheet" href="./css/pudimchocolate.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container-header">
+                <img class="logo" src="./img/logo.png" alt="logo">
+                <h1 class="titulo">Mundo do Pudim</h1>
+                <ul class="menu">
+                    <li><a href="./index.html" target="_parent">Home</a></li>
+                    <li><a href="./historia.html" target="_parent">A História do Pudim </a></li>
+                    <li><a href="./curiosidades.html" target="_parent">Curiosidades</a></li>
+                    <li><a href="./receitas.html" target="_parent">Receitas</a></li>
+                    <li><a href="./faleconosco.html" target="_parent">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+
+        <section>
+            <h1 class="titulo-principal">Pudim de Chocolate</h1>
+        </section>
+
+        <section>
+            <div class="pudim1">
+                <img src="./img/pudim9.jpg" alt="Pudim Chocolate" class="imagem1">
+                <div class="container1">
+                    <h3 class="subtitulo1">Ingredientes</h3>
+                    <ul class="checkbox-group">
+                      <li>
+                        <input type="checkbox" id="item1" />
+                        <label for="item1">1 lata de leite condensado (395g)</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="item2" />
+                        <label for="item2">2 latas de leite (use a lata de leite condensado vazia para medir)
+                        </label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="item3" />
+                        <label for="item3">4 ovos</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="item4" />
+                        <label for="item4">100g de chocolate meio amargo picado</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="item4" />
+                        <label for="item4">1 colher de chá de essência de baunilha (opcional)</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="item5" />
+                        <label for="item5">1/4 de xícara de açúcar (opcional, se quiser um pudim mais doce)</label>
+                      </li>
+                      <li>
+                      <li>
+                        <input type="checkbox" id="item5" />
+                        <label for="item5">1 xícara de açúcar (para a calda)</label>
+                      </li>
+                      <input type="checkbox" id="item5" />
+                        <label for="item5">1 colher de sopa de manteiga</label>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+        </section>
+
+        <section>
+            <div>
+                <h3 class="subtitulo2">Instruções</h3>
+                <br>
+                <p class="resumo2">1. Em uma panela, derreta o açúcar até formar um caramelo dourado. Adicione a água com cuidado e mexa até dissolver. Forre o fundo de uma forma de pudim com a calda e reserve.
+                  <br>
+                  <br>
+                2. No liquidificador, bata o leite condensado, o creme de leite, o leite, o cacau em pó e os ovos até obter uma mistura homogênea.
+                  <br>
+                  <br>
+                3. Despeje a mistura na forma caramelizada e cubra com papel-alumínio.
+                <br>  
+                <br>
+                4. Asse em banho-maria, em forno pré-aquecido a 180ºC, por aproximadamente 1 hora e 30 minutos.
+                <br>
+                <br>  
+                5. Deixe esfriar e leve à geladeira por pelo menos 4 horas antes de desenformar.
+                </p>
+            </div>
+        </section>
+        <br>
+
+        <section>
+            <div>
+                <p class="subtitulo3">Dicas:</p>
+                <br>
+                <br>
+                <p class="resumo2">Use cacau 100% para um sabor mais intenso ou chocolate em pó para um toque mais doce. Sirva com raspas de chocolate por cima.</p>
+            </div>
+        </section>
+        <br>
+
+        <section>
+            <div class="container2">
+                <iframe 
+                src="https://www.youtube.com/watch?v=0MJep0plDlw&t=20s" 
+                title="YouTube-video" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen class="video">
+              </iframe>
+            </div>
+        </section>
+        <br>
+
+        <section>
+            <h3 class="subtitulo4">Deixe aqui a foto do seu pudim e sua avaliação e compartilhe essa receita:</h3>
+        </section>
+
+        <section>
+            <div class="container3">
+                <div class="icons">
+                  <span class="icon" id="favorite" title="Favoritar">❤️</span>
+                  <label for="upload" class="icon" title="Adicionar foto">📷</label>
+                  <input type="file" id="upload" accept="image/*">
+                  <span class="icon" id="share" title="Compartilhar">🔗</span>
+                </div>
+              </div>
+        </section>
+        <br>
+        <br>
+        
+        <section>
+            <div class="container4">
+                <textarea class="message" placeholder="Digite sua mensagem aqui: "></textarea>
+                <br>
+                <p class="status" id="status"></p>
+            </div>
+        </section>
+
+        <section>
+        <div class="rating-container">
+            <div class="stars">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+            </div>
+            <p class="result">Clique em uma estrela para avaliar.</p>
+            <button id="sendButton">Enviar</button>
+            <br>
+            <br>
+          </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="rodape"><b>© 2024 MUNDO DO PUDIM - Todos os direitos reservados</b></p>
+        
+    </footer>
+    
+</body>
+</html>
+
+<script src="./java/script.js"></script>

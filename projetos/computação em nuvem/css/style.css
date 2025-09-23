@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(24, 24, 24);
+    width: 100vw;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 0 25px
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(15, 15, 15);
+    position: relative;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    background-color: #071a33;
+    left: 51%;
+    bottom: 0;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 50px;
+    font-size: 1.5rem;
+}
+
+nav p {
+    font-weight: bold;
+}
+
+.header-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.background-section{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.background-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 85%;
+}
+
+.background-container {
+    width: 80%;
+    position: relative;
+    z-index: -1;
+    background: linear-gradient(to right, rgb (0, 0, 0, 0.9), black);
+    display: flex;
+}
+
+.text-background {
+    margin: 180px 120px;
+}
+
+.text-background h1 {
+    color: white;
+    font-size: 4rem;
+    padding-bottom: 5vh;
+}
+
+.text-background p {
+    color: white;
+    text-align: justify; 
+    max-width: 500px;
+    font-size: 1.3rem;
+}
+
+.text {
+    margin-left: 10%;
+    margin-right: 12%;
+    text-align: justify;
+    line-height: 3vh;
+}
+
+.subtitle {
+    font-size: 2rem;
+    text-align: center;
+}
+
+ol li {
+    margin-left: 10%;
+    margin-right: 12%;
+}
+
+.container-box {
+    display: grid;
+    margin-inline: 1.5rem;
+    padding-block: 2rem;
+    height: 100vh;
+}
+
+.card-box {
+    display: grid;
+    row-gap: 3.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box-article {
+    position: relative;
+    overflow: hidden;
+}
+
+.box-img {
+    width: 480px;
+    margin-top: -8%;
+}
+
+.box-date {
+    width: 360px;
+    background-color: #071a33;
+    padding: 2rem 3rem;
+    box-shadow: 0 15px 24px hsl(0, 0%, 0%, .25);
+    border-radius: 2rem;
+    bottom: 10rem;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    margin-inline: 4rem;
+    transition: opacity 1s 1s;
+}
+
+.descricao{
+    display: block;
+    margin-bottom: .25rem;
+    color: white;
+    text-align: justify;
+}
+
+.box-title{
+    font-weight: 500;
+    color: white;
+    margin-bottom: .75rem;
+}
+
+.button-box {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.button-box:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.box-article:hover .box-date {
+    animation: show-data 3s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.box-article:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.box-article:not(:hover) {
+    animation: show-overflow 2s forward;
+}
+
+.box-article:not(:hover) .box-date{
+    animation: remove-data 1s forwards;
+}
+
+@keyframes show-data {
+    50%{
+        transform: translateY(-20rem);
+    }
+    100%{
+        transform: translateY(-22rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-15rem);
+    }
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+    50% {
+        overflow: hidden;
+    }
+}
+
+footer {
+    background: #409EC8;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 8px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid white;
+}
