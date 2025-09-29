@@ -105,6 +105,14 @@ nav {
     transform: rotate(5deg);
 }
 
+.img-slide2 {
+    position: absolute;
+    top: 8%;
+    right: 7%;
+    width: 420px;
+    height: auto;
+}
+
 .img-slide1:hover, .img-slide1:active {
     transform: rotate(5deg);
 }
@@ -127,7 +135,7 @@ nav {
     margin-right: 9%;
 }
 
-p {
+.legenda1, .legenda2, .legenda3 {
     position: absolute;
     top: 50%;
     color: white;
@@ -137,6 +145,7 @@ p {
     line-height: 1.4;
     text-align: justify;
     text-justify: inter-word;
+
 }
 
 .legenda1 {
@@ -305,4 +314,17 @@ footer {
 .social:hover {
     transform: scale(1.15);
     background: #d6d6d6;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid white;
+}
+
+.text-footer {
+    color: white;
+    text-align: center;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-size: 1.2rem;
 }
